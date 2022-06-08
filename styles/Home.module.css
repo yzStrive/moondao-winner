@@ -1,116 +1,191 @@
-.container {
-  padding: 0 2rem;
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 0;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-height: 95vh;
+}
+
+.header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  justify-content: space-between;
 }
 
 .logo {
-  height: 1em;
-  margin-left: 0.5rem;
+  position: relative;
+  width: 13.4rem;
+  height: 3.75rem;
+  min-height: 3.75rem;
+  cursor: pointer;
+}
+.metamask {
+  position: relative;
+  width: 3.75rem;
+  height: 3.75rem;
+  min-height: 3.75rem;
+  cursor: pointer;
+}
+.wallet {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+}
+.address {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.connectWallet {
+  color: #fff;
+  font-size: 1.5rem;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+.container {
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.main {
+  flex: 1 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.leftWrapper {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.congratulations {
+  position: relative;
+  color: #fff;
+  font-size: 4rem;
+}
+.pickBtn {
+  width: 36rem;
+  height: 8rem;
+  min-height: 8rem;
+  position: relative;
+  cursor: pointer;
+}
+.pickText {
+  font-size: 2rem;
+  position: absolute;
+  left: 50%;
+  color: #fff;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightImages {
+  position: relative;
+}
+
+.earth {
+  height: 40rem;
+  width: 40rem;
+  position: relative;
+}
+.astronaut {
+  width: 25rem;
+  height: 37.5rem;
+
+  position: absolute;
+  left: 50%;
+  color: #fff;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.astronautListWrapper {
+  display: flex;
+  margin-top: 2rem;
+  position: relative;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: -1rem;
+  justify-content: center;
+}
+
+.astronautItem {
+  display: flex;
+  width: 45%;
+  max-width: 45%;
+
+  height: 6rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  /* background-color: antiquewhite; */
+}
+.astronautIcon {
+  width: 6rem;
+  height: 6rem;
+  position: relative;
+}
+.astronautNumber {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.footer {
+  position: absolute;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  left: 0;
+  right: 0;
+  bottom: 1.5rem;
+}
+
+.syncBtn {
+  padding: 0 1rem;
+  position: relative;
+  min-width: 20rem;
+  height: 2.94rem;
+  color: #000000;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 2.94rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  background: #0affe2;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .astronautNumber {
+    color: #fff;
+    font-size: 1.5rem;
   }
 }
